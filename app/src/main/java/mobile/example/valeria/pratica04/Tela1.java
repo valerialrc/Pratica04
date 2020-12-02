@@ -1,7 +1,6 @@
 package mobile.example.valeria.pratica04;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +24,9 @@ public class Tela1 extends AppCompatActivity {
         EditText copos = (EditText) findViewById(R.id.editCopos);
         EditText jejum = (EditText) findViewById(R.id.editJejum);
 
-        Intent it = new Intent(getBaseContext(), Tela2.class);
+        //Intent it = new Intent(getBaseContext(), Tela2.class);
+
+        Intent it = new Intent("ACAO");
 
         Bundle params = new Bundle();
 
