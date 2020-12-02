@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela1">
+
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_alignLeft="@+id/editPeso"
+        android:layout_below="@+id/editPeso"
+        android:background="@android:drawable/editbox_dropdown_light_frame"        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:inputType="textPersonName"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/editCopos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSexo"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignLeft="@+id/editPeso"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/editJejum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editCopos"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignLeft="@+id/editPeso"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editPeso"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/editPeso"
+        android:text="Peso:"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPeso"
+        android:layout_alignTop="@+id/editSexo"
+        android:layout_alignBottom="@+id/editSexo"
+        android:layout_toLeftOf="@+id/editSexo"
+        android:layout_marginRight="10dp"
+        android:text="Sexo (m/f):"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textCopos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editCopos"
+        android:layout_alignBottom="@+id/editCopos"
+        android:layout_toLeftOf="@+id/editSexo"
+        android:layout_marginRight="10dp"
+        android:text="Nº de copos:"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textJejum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editJejum"
+        android:layout_toLeftOf="@+id/editSexo"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp"
+        android:text="Está de jejum? (s/n):"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar dados"
+        android:layout_below="@id/textJejum"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="enviar"
+        />
+
+
+</RelativeLayout>
